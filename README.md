@@ -13,6 +13,8 @@
 
 **Docker-machine ls** *Show the docker machine*\n
 
-**Docker-machine env <machine-name** *See docker-machine properties*\n
+**Docker-machine env <machine-name>** *See docker-machine properties*\n
+
+**@FOR /f "tokens=*" %i IN ('docker-machine env <machine name>') DO @%i** *Change active machine*
 
 https://www.youtube.com/watch?v=tBfOHso1-6o&t=1s
