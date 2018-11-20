@@ -17,4 +17,10 @@
 
 **@FOR /f "tokens=*" %i IN ('docker-machine env <machine name>') DO @%i** *Change active machine*
 
+**eval "$(docker-machine env default)"** *Connect your shell to the new machine*
+
+**docker-machine stop default** *Stop*
+
+**docker-machine start default** *Start*
+
 https://www.youtube.com/watch?v=tBfOHso1-6o&t=1s
