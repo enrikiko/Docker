@@ -1,16 +1,26 @@
 # docker
 
 ## Daily commands
-**Docker images** *Show the images in docker* \n
-**Docker rmi <imageID>** *Remove a docker image* \n
-**Docker rmi $(docker images -q) -f** *Remove all docker images* \n
-**Docker ps -a** *Show the containers in docker* \n
-**Docker rm <containerID>** *Remove a docker container* \n
-**Docker rm $(docker ps -a -q) -f** *Remove all docker containers* \n
-**Docker-compose up** *Build & update a container* \n
-**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine*\n
-**Docker rmi $(docker images -f "dangling=true" -q)** *Remove Images <none>* \n
-**docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip*\n
+**Docker images** *Show the images in docker*
+
+**Docker rmi <imageID>** *Remove a docker image*
+
+**Docker rmi $(docker images -q) -f** *Remove all docker images*
+
+**Docker ps -a** *Show the containers in docker*
+
+**Docker rm <containerID>** *Remove a docker container*
+
+**Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
+
+**Docker-compose up** *Build & update a container*
+
+**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine
+
+**Docker rmi $(docker images -f "dangling=true" -q)** *Remove Images <none>*
+
+**docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip
+
 
 
 ### docker-machine:
