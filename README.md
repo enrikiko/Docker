@@ -15,7 +15,7 @@
 
 **Docker-compose up** *Build & update a container*
 
-**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine
+**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine*
 
 **Docker rmi $(docker images -f "dangling=true" -q)** *Remove Images <none>*
 
