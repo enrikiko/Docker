@@ -17,7 +17,7 @@
 
 **Docker-machine create -d virtualbox <machine-name** *Create a new docker machine*
 
-**Docker rmi $(docker images -f "dangling=true" -q)** *Remove Images <none>*
+**Docker rmi $(docker images -f "dangling=true" -q)** *Remove "none" Images*
 
 **docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip
 
