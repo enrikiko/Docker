@@ -31,7 +31,6 @@
 
 **@FOR /f "tokens=*" %i IN ('docker-machine env <machine name>') DO @%i** *Change active machine*
 
-
 > [docker Tutorial](https://www.youtube.com/watch?v=tBfOHso1-6o&t=1s)
 > [Sintax Readme.md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 > [Git Commant](http://rogerdudler.github.io/git-guide/)
