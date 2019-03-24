@@ -1,24 +1,26 @@
 # docker
 
 ## Daily commands
+**Docker images** *Show the images in docker*
 
-**docker images** *Show the images in docker*
+**Docker rmi <imageID>** *Remove a docker image*
 
-**docker build -t image_name .** *Build image from dockerfile*
+**Docker rmi $(docker images -q) -f** *Remove all docker images*
 
-**docker rmi <imageID>** *Remove a docker image*
+**Docker ps -a** *Show the containers in docker*
 
-**docker rmi $(docker images -q) -f** *Remove all docker images*
+**Docker rm <containerID>** *Remove a docker container*
 
-**docker ps -a** *Show the containers in docker*
+**Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
 
-**docker rm <containerID>** *Remove a docker container*
+**Docker-compose up** *Build & update a container*
 
-**docker rm $(docker ps -a -q) -f** *Remove all docker containers*
+**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine*
 
-**docker-compose up** *Build & update a container*
+**Docker rmi $(docker images -f "dangling=true" -q)** *Remove "none" Images*
 
-**docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip*
+**docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip
+
 
 
 ### docker-machine:
@@ -29,7 +31,29 @@
 
 **docker-machine env <machine-name>** *See docker-machine properties*
 
-**@FOR /f "tokens=*" %i IN ('docker-machine env <machine name>') DO @%i** *Change active machine*
+**@FOR /f "tokens=*" %i IN ('docker-machine env docker-machine-name') DO @%i** *Change active machine*
+
+**eval "$(docker-machine env default)"** *Connect your shell to the new machine*
+
+**docker-machine stop default** *Stop*
+
+**docker-machine start default** *Start*
+
+others commands:
+- `docker-machine config`
+<!-- - `docker-machine env` -->
+- `docker-machine inspect`
+- `docker-machine ip`
+- `docker-machine kill`
+- `docker-machine provision`
+- `docker-machine regenerate-certs`
+- `docker-machine restart`
+- `docker-machine ssh`
+<!-- - `docker-machine start` -->
+- `docker-machine status`
+<!-- - `docker-machine stop` -->
+- `docker-machine upgrade`
+- `docker-machine url`
 
 > [docker Tutorial](https://www.youtube.com/watch?v=tBfOHso1-6o&t=1s)
 > [Sintax Readme.md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
