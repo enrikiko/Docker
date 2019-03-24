@@ -1,5 +1,12 @@
 # docker
 
+## TOP USED :
+**Docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
+
+**Docker rmi $(docker images -q) -f** *Remove all docker images*
+
+**Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
+
 ## Daily commands
 **Docker images** *Show the images in docker*
 
@@ -15,15 +22,14 @@
 
 **Docker-compose up** *Build & update a container*
 
-**Docker-machine create -d virtualbox <machine-name** *Create a new docker machine*
+**Docker-machine create -d virtualbox <machine-name>** *Create a new docker machine*
 
-**Docker rmi $(docker images -f "dangling=true" -q)** *Remove "none" Images*
+**Docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
 
 **docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip
 
 
-
-### docker-machine:
+## docker-machine:
 
 **docker-machine create -d virtualbox temp.sysadmin.local** *create a virtual docker container*
 
@@ -41,7 +47,7 @@
 
 others commands:
 - `docker-machine config`
-<!-- - `docker-machine env` -->
+- `docker-machine env`
 - `docker-machine inspect`
 - `docker-machine ip`
 - `docker-machine kill`
@@ -49,12 +55,14 @@ others commands:
 - `docker-machine regenerate-certs`
 - `docker-machine restart`
 - `docker-machine ssh`
-<!-- - `docker-machine start` -->
+- `docker-machine start`
 - `docker-machine status`
-<!-- - `docker-machine stop` -->
+- `docker-machine stop`
 - `docker-machine upgrade`
 - `docker-machine url`
 
 > [docker Tutorial](https://www.youtube.com/watch?v=tBfOHso1-6o&t=1s)
+
 > [Sintax Readme.md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
+
 > [Git Commant](http://rogerdudler.github.io/git-guide/)

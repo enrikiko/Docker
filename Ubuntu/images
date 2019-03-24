@@ -1,0 +1,18 @@
+REPOSITORY                                 TAG                 IMAGE ID            CREATED              SIZE
+ubuntu                                     latest              75a52d93f5dc        About a minute ago   562MB
+<none>                                     <none>              6cc4a57f40d1        35 minutes ago       556MB
+ubuntu                                     14.04               390582d83ead        12 days ago          188MB
+ubuntu                                     18.04               94e814e2efa8        12 days ago          88.9MB
+ubuntu                                     16.04               7e87e2b3bf7a        2 months ago         117MB
+k8s.gcr.io/kube-proxy-amd64                v1.10.11            7387003276ac        3 months ago         98.3MB
+k8s.gcr.io/kube-apiserver-amd64            v1.10.11            e851a7aeb6e8        3 months ago         228MB
+k8s.gcr.io/kube-controller-manager-amd64   v1.10.11            978cfa2028bf        3 months ago         151MB
+k8s.gcr.io/kube-scheduler-amd64            v1.10.11            d2c751d562c6        3 months ago         51.2MB
+docker/kube-compose-controller             v0.4.12             02a45592fbea        6 months ago         27.8MB
+docker/kube-compose-api-server             v0.4.12             0f92c77fa676        6 months ago         41.2MB
+k8s.gcr.io/etcd-amd64                      3.1.12              52920ad46f5b        12 months ago        193MB
+k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64     1.14.8              c2ce1ffb51ed        14 months ago        41MB
+k8s.gcr.io/k8s-dns-sidecar-amd64           1.14.8              6f7f2dc7fab5        14 months ago        42.2MB
+k8s.gcr.io/k8s-dns-kube-dns-amd64          1.14.8              80cc5ea4b547        14 months ago        50.5MB
+k8s.gcr.io/pause-amd64                     3.1                 da86e6ba6ca1        15 months ago        742kB
+Sun Mar 24 22:21:12 CET 2019
