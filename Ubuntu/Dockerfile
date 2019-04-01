@@ -24,3 +24,11 @@ RUN apt install -y git
 WORKDIR /tmp/enrique
 RUN git clone https://github.com/enrikiko/docker/
 RUN git clone https://github.com/enrikiko/Python/
+
+RUN alias vault=ansible-vault
+RUN alias py=python
+
+RUN apt -y install awscli
+RUN curl -L -o /usr/local/bin/aws-vault https://github.com/99designs/aws-vault/releases/download/v4.2.0/aws-vault-linux-amd64
+RUN chmod 755 /usr/local/bin/aws-vault
+RUN apt-get -y install vim

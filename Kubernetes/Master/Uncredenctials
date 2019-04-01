@@ -1,0 +1,2 @@
+kubeadm join 10.0.0.46:6443 --token wl2ps6.5jvvklirisi2hvoh \
+    --discovery-token-ca-cert-hash sha256:82190ee1bde04007c41a8fa9be0ba87898174df496ed5683231001291ee37a37
