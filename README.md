@@ -7,6 +7,10 @@
 
 **Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
 
+**Docker commit container-name tag** *Create a image from a container*
+
+**Docker tag imagesID new-docker-name:tag** *Rename image*
+
 ## Daily commands
 **Docker images** *Show the images in docker*
 
