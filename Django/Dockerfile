@@ -1,6 +1,8 @@
 FROM ubuntu:18.04
+COPY apt_requirements.txt apt_requirements.txt
 RUN apt update
-RUN apt install python3-pip -y
+RUN apt install --no-cache-dir -r apt_requirements.txt -y
+RUN pip3 install django
 RUN django-admin startproject mysite
 RUN cd mysite
 COPY requirements.txt requirements.txt
