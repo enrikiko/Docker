@@ -11,8 +11,6 @@
 # RUN add-apt-repository 'deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main'
 # RUN apt update
 # RUN apt install -y mongodb-org
-# FROM mongo:827
-# COPY init.sh init.sh
-# RUN mongod
-# FROM enriqueramosmunoz/rolling:mongo
-ENTRYPOINT ["sh", "init.sh"]
+FROM mongo:827
+COPY init.sh init.sh
+#ENTRYPOINT ["sh", "init.sh"]
