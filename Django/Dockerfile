@@ -5,7 +5,6 @@ COPY pip_requirements.txt pip_requirements.txt
 RUN cat apt_requirements.txt
 RUN cat pip_requirements.txt
 RUN apt update
-RUN apt install -y -r apt_requirements.txt
 RUN apt install -y python3-pip
 RUN pip3 install -r pip_requirements.txt
 RUN django-admin startproject mysite
