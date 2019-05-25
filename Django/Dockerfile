@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+WORKDIR /tmp
 COPY apt_requirements.txt apt_requirements.txt
 RUN apt update
 RUN apt install -y python3-pip
