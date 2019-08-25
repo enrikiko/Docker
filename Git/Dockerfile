@@ -3,7 +3,7 @@ RUN apt update
 RUN apt install -y ansible
 RUN apt install -y apt openssh-client
 RUN apt install -y git
-COPY ./ ./
+COPY ./private ./private
 RUN mkdir text.txt
 ARG PASSWORD
 RUN echo $PASSWORD > ./password
@@ -15,4 +15,5 @@ RUN chmod 600 ~/.ssh/id_rsa
 RUN ssh -oStrictHostKeyChecking=no -T git@github.com || true
 RUN git clone git@github.com:enrikiko/Java
 RUN chmod 777 init.sh
+COPY ./ ./
 ENTRYPOINT ["sh", "init.sh"]
