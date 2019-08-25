@@ -13,4 +13,4 @@
 # RUN apt install -y mongodb-org
 FROM mongo:827
 COPY init.sh init.sh
-#ENTRYPOINT ["sh", "init.sh"]
+ENTRYPOINT ["sh", "init.sh"]
