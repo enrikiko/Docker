@@ -14,6 +14,6 @@ RUN mv ./private ~/.ssh/id_rsa
 RUN chmod 600 ~/.ssh/id_rsa
 RUN ssh -oStrictHostKeyChecking=no -T git@github.com || true
 RUN git clone git@github.com:enrikiko/Java
-RUN chmod 777 init.sh
 COPY ./ ./
+RUN chmod 777 init.sh
 ENTRYPOINT ["sh", "init.sh"]
