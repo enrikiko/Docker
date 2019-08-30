@@ -1,2 +1,2 @@
-- docker build -t AutoCommitImage --build-arg PASSWORD=<Password> .
-- docker run -d --name AutoCommitContainer AutoCommitImage
+- docker build -t autocommitimage --build-arg PASSWORD=<Password> .
+- docker run -d --name autocommitcontainer autocommitimage
