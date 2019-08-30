@@ -16,4 +16,4 @@ RUN ssh -oStrictHostKeyChecking=no -T git@github.com || true
 RUN git clone git@github.com:enrikiko/Java
 COPY ./ ./
 RUN chmod 777 init.sh
-ENTRYPOINT ["sh", "init.sh"]
+ENTRYPOINT ["./init.sh"]
