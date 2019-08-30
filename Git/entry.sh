@@ -2,11 +2,12 @@
 echo "Starting entry.sh"
 git config --global user.email "enrikiko_91@hotmail.com"
 git config --global user.name "enrikiko_91"
-
+date
 while [ 1 ]
 do
-
+     date
      day=$(date > file | cut -f1 -d " " file)
+     echo $day
 
      if [ "$day" == "Mon" ]
      then
