@@ -2,7 +2,6 @@
 echo "Starting entry.sh"
 git config --global user.email "enrikiko_91@hotmail.com"
 git config --global user.name "enrikiko_91"
-#echo "New file is create" > ./Java/newFile.txt
 
 while [ 1 ]
 do

@@ -1,4 +1,5 @@
 #! /bin/bash
+echo "Starting commit.sh"
 text=$(python ./randomSentence.py)
 sh makeSomeChange.sh
 cd ./Java
