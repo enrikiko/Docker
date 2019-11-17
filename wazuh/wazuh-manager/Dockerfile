@@ -21,5 +21,6 @@ RUN curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com
 RUN curl -s https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz | tar -xvz -C /usr/share/filebeat/module; exit 0
 RUN update-rc.d filebeat defaults 95 10
 RUN service filebeat start; exit 0
+RUN apt install vim -y
 COPY ./init.sh ./init.sh
 ENTRYPOINT [ "sh", "init.sh" ]

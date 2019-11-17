@@ -6,3 +6,7 @@ services:
     restart: always
     ports:
       - "55000:55000"
+  agente:
+    container_name: wazuh-agente
+    build: ./wazuh-agente/.
+    restart: always
