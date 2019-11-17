@@ -1,34 +1,34 @@
 # docker
 
 ## TOP USED :
-**Docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
+**docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
 
-**Docker rmi $(docker images -q) -f** *Remove all docker images*
+**docker rmi $(docker images -q) -f** *Remove all docker images*
 
-**Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
+**docker rm $(docker ps -a -q) -f** *Remove all docker containers*
 
-**Docker commit container-name tag** *Create a image from a container*
+**docker commit container-name tag** *Create a image from a container*
 
-**Docker tag imagesID new-docker-name:tag** *Rename image*
+**docker tag imagesID new-docker-name:tag** *Rename image*
 
 ## Daily commands
-**Docker images** *Show the images in docker*
+**docker images** *Show the images in docker*
 
-**Docker rmi <imageID>** *Remove a docker image*
+**docker rmi <imageID>** *Remove a docker image*
 
-**Docker rmi $(docker images -q) -f** *Remove all docker images*
+**docker rmi $(docker images -q) -f** *Remove all docker images*
 
-**Docker ps -a** *Show the containers in docker*
+**docker ps -a** *Show the containers in docker*
 
-**Docker rm <containerID>** *Remove a docker container*
+**docker rm <containerID>** *Remove a docker container*
 
-**Docker rm $(docker ps -a -q) -f** *Remove all docker containers*
+**docker rm $(docker ps -a -q) -f** *Remove all docker containers*
 
-**Docker-compose up** *Build & update a container*
+**docker-compose up** *Build & update a container*
 
-**Docker-machine create -d virtualbox <machine-name>** *Create a new docker machine*
+**docker-machine create -d virtualbox <machine-name>** *Create a new docker machine*
 
-**Docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
+**docker rmi $(docker images -f "dangling=true" -q) -f** *Remove "none" Images*
 
 **docker inspect --format '{{ .NetworkSettings.IPAddress }}' $(docker ps -q)** *Get Ip
 

@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  manager:
+    container_name: wazuh-manager
+    build: ./wazuh-manager/.
+    restart: always
+    ports:
+      - "55000:55000"
