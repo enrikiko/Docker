@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  spring-web-mongo:
+    build: .
+    ports:
+      - 80:8080
