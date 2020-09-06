@@ -4,6 +4,6 @@ services:
   http:
     build: .
     volumes:
-      - /.:/usr/src/app
+      - .:/usr/src/app
     ports:
       - 80:80
