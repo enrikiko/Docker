@@ -3,6 +3,7 @@
 ## Index
 - [Ubuntu](Ubuntu/README.md)
 - [Python](Python/README.md)
+- [Java](Java/README.md)
 - [NodeJs](NodeJs/README.md)
 - [GitAutoCommit](GitAutoCommit/README.md)
 

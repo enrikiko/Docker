@@ -1,7 +1,0 @@
-version: '3.4'
-
-services:
-  java:
-    build: .
-    ports:
-      - 80:8080

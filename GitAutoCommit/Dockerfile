@@ -6,6 +6,9 @@ RUN apt install -y git
 COPY ./private ./private
 RUN mkdir text.txt
 ARG PASSWORD
+ARG GIT_EMAIL
+ARG GIT_USER
+ARG GIT_REPO
 RUN echo $PASSWORD > ./password
 RUN ansible-vault decrypt --vault-password-file=./password private
 RUN mkdir ~/.ssh
@@ -13,7 +16,7 @@ RUN chmod 700 ~/.ssh
 RUN mv ./private ~/.ssh/id_rsa
 RUN chmod 600 ~/.ssh/id_rsa
 RUN ssh -oStrictHostKeyChecking=no -T git@github.com || true
-RUN git clone git@github.com:enrikiko/Java
+RUN git clone git@github.com:$GIT_REPO
 COPY ./ ./
 RUN chmod 777 init.sh
 RUN chmod 777 entry.sh
